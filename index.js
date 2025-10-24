@@ -8,7 +8,7 @@ const INTERVAL_MS = 2 * 60 * 1000; // 2 minutes
 const PORT = process.env.PORT || 3000;
 
 const LOGIN_PAYLOAD = JSON.stringify({
-  email: "ahmed@admin.com",
+  email: "test@test.com",
   password: "123456"
 });
 
@@ -100,7 +100,7 @@ function pingApp1() {
   
   const options = {
     hostname: url.hostname,
-    path: url.pathname,
+    path: '/',
     method: 'GET',
     timeout: 10000
   };
